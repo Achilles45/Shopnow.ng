@@ -1,0 +1,14 @@
+{
+  "name": "shopnow.ng",
+  "version": "1.0.0",
+  "description": "an online shopping platform for practice",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w src/scss -o dist/css --recursive"
+  },
+  "author": "Achilles",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

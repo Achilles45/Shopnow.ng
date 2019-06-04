@@ -1,0 +1,28 @@
+.why-us{
+    background: #f4f4f4;
+    .why-us__contents{
+        padding:1rem 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-gap: 20px;
+    }
+    .why-us__card{
+        background: #fff;
+        padding:1rem 1rem;
+        h6{
+            font-size: .9rem;
+            color:#636363;
+            margin-bottom: .5rem;
+        }
+        p{
+            color:#636363;
+            font-size: .8rem;
+        }
+        .card-icon{
+            color:$primary-color;
+        }
+    }
+    .why-us__text{
+        width:80%;
+    }
+}

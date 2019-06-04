@@ -1,0 +1,91 @@
+.main__header{
+    width:100%;
+    background: #fff;
+    position: fixed;
+    top:0;
+    z-index: 100;
+}
+.top__nav__wrapper{
+    background: #fff;
+    width:100%;
+    box-shadow: 0px 0px 2px rgba(0,0,0,.5);
+    padding:.8rem 0;
+    p{
+        margin-right:20px;
+        font-size: .8rem;
+        letter-spacing: .009rem;
+        color:#636363;
+        .top__icon{
+            color:$primary-color;
+            font-size: .8rem;
+        }
+    }
+    .top__nav__right{
+        .fa-facebook-f, .fa-twitter, .fa-instagram, .fa-youtube{
+            color:$primary-color;
+            padding-left: 5px;
+            cursor: pointer;
+        }
+    }
+}
+.navbar__section{
+    width: 100%;
+    background: #fff;
+    margin-top:1rem;
+    .navbar__section__contents{
+        align-items: center;
+    }
+    .logo--cart{
+        height: 3rem;
+    }
+    .navbar__toggler{
+        display: none;
+    }
+    .navbar__logo{
+        h2{
+            color:#636363;
+        }
+    }
+    .navbar__form{
+        margin-left:40px;
+        font-family: 'Poppins', sans-serif;
+        .form__input input[type=text]{
+            height:2.45rem;
+            width:35rem;
+            padding:.5rem 1rem;
+        }
+        .form__btn{
+            background: #000;
+            color:#fff;
+            padding:.6rem 1.5rem;
+            cursor: pointer;
+            border: none;
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+}
+.navbar__right{
+    ul{
+        li a{
+            text-decoration: none;
+            margin-left: 2rem;
+            color:#636363;
+            font-size: .9rem;
+            &:hover{
+                color:$primary-color;
+            }
+        }
+    }
+    .top__icon{
+        color:$primary-color;
+        font-size: .8rem;
+    }
+    .navbar__account{
+        margin-right: 2rem;
+    }
+    .fa-shopping-basket{
+        color: $primary-color;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+}
