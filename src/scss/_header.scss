@@ -16,13 +16,13 @@
         letter-spacing: .009rem;
         color:#636363;
         .top__icon{
-            color:$primary-color;
+            color:#636363;;
             font-size: .8rem;
         }
     }
     .top__nav__right{
         .fa-facebook-f, .fa-twitter, .fa-instagram, .fa-youtube{
-            color:$primary-color;
+            color:$secondary-color;
             padding-left: 5px;
             cursor: pointer;
         }
@@ -37,6 +37,7 @@
     }
     .logo--cart{
         height: 3rem;
+        color:$secondary-color;
     }
     .navbar__toggler{
         display: none;
@@ -84,7 +85,7 @@
         margin-right: 2rem;
     }
     .fa-shopping-basket{
-        color: $primary-color;
+        color: $secondary-color;
         font-size: 2rem;
         cursor: pointer;
     }

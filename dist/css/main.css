@@ -44,10 +44,10 @@ ul {
     letter-spacing: .009rem;
     color: #636363; }
     .top__nav__wrapper p .top__icon {
-      color: #217FD1;
+      color: #636363;
       font-size: .8rem; }
   .top__nav__wrapper .top__nav__right .fa-facebook-f, .top__nav__wrapper .top__nav__right .fa-twitter, .top__nav__wrapper .top__nav__right .fa-instagram, .top__nav__wrapper .top__nav__right .fa-youtube {
-    color: #217FD1;
+    color: #55D187;
     padding-left: 5px;
     cursor: pointer; }
 
@@ -58,7 +58,8 @@ ul {
   .navbar__section .navbar__section__contents {
     align-items: center; }
   .navbar__section .logo--cart {
-    height: 3rem; }
+    height: 3rem;
+    color: #55D187; }
   .navbar__section .navbar__toggler {
     display: none; }
   .navbar__section .navbar__logo h2 {
@@ -94,7 +95,7 @@ ul {
   margin-right: 2rem; }
 
 .navbar__right .fa-shopping-basket {
-  color: #217FD1;
+  color: #55D187;
   font-size: 2rem;
   cursor: pointer; }
 
@@ -111,7 +112,7 @@ ul {
         margin-bottom: 1rem; }
       .hero__section .hero__section__contents .cartegories__wrapper ul li a {
         text-decoration: none;
-        color: #217FD1;
+        color: #636363;
         line-height: 2.5;
         font-size: .9rem; }
     .hero__section .hero__section__contents .hero__section__slider {
@@ -229,7 +230,14 @@ ul {
           font-size: 1rem; }
           .products .products__section .products__card__wrapper .products__card .products__btn:hover {
             color: #fff;
-            background: #55D187; }
+            background: #55D187;
+            border: #55D187; }
+
+.about .about__contents {
+  padding: 3rem 0; }
+  .about .about__contents p {
+    font-size: .9rem;
+    color: #636363; }
 
 footer {
   background: #121214;
