@@ -14,6 +14,7 @@
         display: flex;
         justify-content: space-between;
         color:#636363;
+        font-size:.8rem;
     }
     .checkout__btn{
         background: $secondary-color;
@@ -49,4 +50,14 @@
         color:red;
         cursor: pointer;
     }
+}
+
+.loader__div{
+    background: red;
+    color:#fff;
+    padding:2rem 3rem;
+    position: absolute;
+    top:50%;
+    display: flex;
+    align-content: center;
 }
