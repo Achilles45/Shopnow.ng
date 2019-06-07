@@ -1,5 +1,7 @@
 
 
+'use strict'
+
 let cart = [];
 const cartDOM = document.querySelector('.cart');
 const addToCartButtonsDOM = document.querySelectorAll('[data-action="add__to__cart"]');
@@ -22,7 +24,7 @@ addToCartButtonsDOM.forEach((addToCartButtonDOM)=>{
         <h6 class="cart__item__name">${products.name}</h6>
         <h6 class="cart__item__price">${products.price}</h6>
         </div>
-        <p class="delete__item">&times;</p>
+        <button class="remove__btn" data-action="remove__item">&times;</button>
         </div>
         `)
         addToCartButtonDOM.textContent = 'In Cart';
@@ -30,11 +32,29 @@ addToCartButtonsDOM.forEach((addToCartButtonDOM)=>{
         cart.push(products);
         const count = cart.length;
         document.querySelector('.item__counter').innerHTML = `${count} items`;
+
+       //Function to remove an item friom the cart
+       const cartItemsDOM = cartDOM.querySelectorAll('.cart__item');
+       cartItemsDOM.forEach(cartItemDOM=>{
+           if (cartItemDOM.querySelector('.cart__item__name').innerText === products.name) {
+            cartItemDOM.querySelector('[data-action="remove__item"]').addEventListener('click', (e)=>{
+             e.target.parentElement.remove();
+            });
+           }
+       }) 
+
+
        }else{
         addToCartButtonDOM.textContent = 'Item in cart';
        }
     })
 })
+
+
+
+
+
+
 
 //FUNCTION TO SHOW CART
 function showCart(){
@@ -44,11 +64,3 @@ function showCart(){
 
 
 
-
-
-//Function to remove an item from the shopping cart
-const cartItemsDOM = document.querySelectorAll('.cart__item');
-cartItemsDOM.forEach(cartItemDOM=>{
-    const cartItemRemoveBtn = cartItemDOM.querySelector('.delete__item')
-   alert('dfjkgadhfah')
-})
