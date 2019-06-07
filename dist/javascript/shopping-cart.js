@@ -45,16 +45,10 @@ function showCart(){
 
 
 
-cart.forEach(cartItem=>{
-    cartItem.addEventListener('click', (event)=>{
-       console.log(event.target)
-       event.preventDefault();
-    })
+
+//Function to remove an item from the shopping cart
+const cartItemsDOM = document.querySelectorAll('.cart__item');
+cartItemsDOM.forEach(cartItemDOM=>{
+    const cartItemRemoveBtn = cartItemDOM.querySelector('.delete__item')
+   alert('dfjkgadhfah')
 })
-//Function to remove a product with the X icon on the frontend
-// function removeProduct(event){
-//     if (event.target.classList.contains('delete__item')) {
-//         console.log(event.target)
-//     }
-//     event.preventDefault();
-// }
